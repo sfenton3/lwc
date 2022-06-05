@@ -1,0 +1,24 @@
+minimum_cumulusci_version: '3.59.1'
+project:
+    name: lwc
+    package:
+        name: lwc
+        api_version: '54.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/lwc/tests
+            options:
+                outputdir: robot/lwc/results
+
+    robot_testdoc:
+        options:
+            path: robot/lwc/tests
+            output: robot/lwc/doc/lwc_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
