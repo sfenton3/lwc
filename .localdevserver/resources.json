@@ -208,5 +208,19 @@
         "component://c/accountCreator@en-US": {
             "dev": "dc89cb29ce"
         }
+    },
+    "d4d226e242": {
+        "component://@webruntime/app@en-US": {
+            "dev": "87b80922db"
+        },
+        "component://localdevserver/home@en-US": {
+            "dev": "c0efafa63a"
+        },
+        "component://localdevserver/preview@en-US": {
+            "dev": "d8da1a15eb"
+        },
+        "component://c/colorFlipper@en-US": {
+            "dev": "fb5831325b"
+        }
     }
 }
