@@ -1,0 +1,1 @@
+{"errors":[{"filename":"c:\\Documents2\\GitHub\\lwc\\force-app\\main\\default\\lwc\\colorFlipper\\colorFlipper.html","location":{"line":1,"column":1,"start":0,"length":522},"code":"","message":"Root template doesn't allow attributes"}]}
