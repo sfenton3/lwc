@@ -28,11 +28,10 @@ export default class Stopwatch extends LightningElement {
             let minute = (Math.floor(this.count / 60) % 60) < 10 ? "0" + (Math.floor(this.count / 60) % 60) : (Math.floor(this.count / 60) % 60);
             let second = (this.count % 60) < 10 ? "0" + (this.count % 60) : (this.count % 60);
 
-
             this.time = hour + " : " + minute + " : " + second;
 
 
-        }, 1);
+        }, 1000);
 
     }
     stop(event) {

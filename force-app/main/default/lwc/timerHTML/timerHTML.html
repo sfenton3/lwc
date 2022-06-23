@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-card slds-grid slds-grid_vertical" style="background-color: lightgrey">
+        <div class="slds-align_absolute-center slds-border_top ">
+            <h6> Counter </h6>
+        </div>
+        <div class="slds-align_absolute-center">
+            <br>
+            <h1> 0 </h1>
+            <br>
+        </div>
+
+        <div class="slds-grid slds-border_bottom">
+            <lightning-button variant="brand" label="Decrease" title="Primary action" onclick={handleClick}
+                class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Reset" title="Primary action" onclick={handleClick}
+                class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Increase" title="Primary action" onclick={handleClick}
+                class="slds-m-left_x-small slds-m-right_x-small"></lightning-button>
+        </div>
+    </div>
+</template>

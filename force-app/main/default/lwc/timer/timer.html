@@ -1,11 +1,22 @@
 <template>
-    <div class="slds-m-top_small slds-m-bottom_medium">
-
-        <h1> Stopwatch Application </h1>
-        <h1> {time} </h1>
-        <button onclick={start}> Start </button>
-        <button onclick={stop}> Stop </button>
-        <button onclick={reset}> reset </button>
-
+    <div class="slds-grid" style="background-color: white">
+        <div style="background-color: red">
+            <h1> Stopwatch App </h1>
+            <div class="slds-box">
+                <h1> {time} </h1>
+            </div>
+        </div>
+        <br>
+        <div style="background-color: blue">
+            <lightning-button variant="brand" label="Start" title="Start Stopwatch" onclick={start}
+                class="slds-m-left_x-small">
+            </lightning-button>
+            <lightning-button variant="brand" label="Stop" title="Stop stopwatch" onclick={stop}
+                class="slds-m-left_x-small">
+            </lightning-button>
+            <lightning-button variant="brand" label="Reset" title="Reset Stopwatch" onclick={reset}
+                class="slds-m-left_x-small">
+            </lightning-button>
+        </div>
     </div>
 </template>
