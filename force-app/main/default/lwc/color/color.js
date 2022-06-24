@@ -1,6 +1,6 @@
-import { LightningElement, api, track } from 'lwc'
-export default class ColorFlipper extends LightningElement {
+import { LightningElement, track } from 'lwc';
 
+export default class Color extends LightningElement {
     @track color = "";
 
     changeColor(event) {
