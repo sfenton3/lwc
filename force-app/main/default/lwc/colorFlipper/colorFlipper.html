@@ -2,21 +2,18 @@
     <div class="slds-grid slds-wrap">
         <div class="slds-col slds-size_1-of-2 slds-grid_vertical-align-start"
             style="background-color: white; text-align: center">
-            Color Flipper
+            <h1 onclick={setFlip}>Color Flipper</h1>
         </div>
         <div class="slds-col slds-size_1-of-2 slds-grid_vertical-align-start"
             style="background-color: white; text-align: center">
-            Simple Hex
+            <h1 onclick={setSimple}>Simple Hex</h1>
         </div>
-
-        <div class="slds-col slds-size_1-of-1 slds-size_large" data-id="color">
-            <h1 class="slds-m-top_xx-large slds-m-bottom_xx-large slds-text-align_center">Background Color : {color}
-                <span></span>
-                <lightning-button variant="brand" label="Change background!" title="click me" onclick={changeColor}
+        <div class="slds-col slds-size_1-of-1 slds-size_large" style={color}>
+            <h1 class="slds-m-top_xx-large slds-m-bottom_xx-large slds-text-align_center">Background Color : {bgc}
+                <br></br>
+                <lightning-button variant="brand" label="Change background!" title="click me" onclick={eventmanager}
                     class="slds-m-left_x-small"></lightning-button>
-
             </h1>
-
         </div>
     </div>
 </template>
