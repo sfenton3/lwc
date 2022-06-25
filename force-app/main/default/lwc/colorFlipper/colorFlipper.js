@@ -21,7 +21,6 @@ export default class ColorFlipper extends LightningElement {
     setSimple(event) {
         this.cf = false;
         console.log(this.cf);
-
     }
 
     changeColor(event) {
