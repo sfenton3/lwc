@@ -9,7 +9,7 @@ li {
     align-items: center;
 }
 /* select all div eleements and style as such */
-div {
+div.cont {
     background-color: lightgray;
     width: 300px;
     height: 300px;
@@ -17,13 +17,12 @@ div {
     padding: 20px;
 }
 /* element selector + class selector */
-li.special, span.special {
-    color: orange;
+.special {
     font-weight: bold;
 }
 /*  Decendent combinator */
 li em {
-    color: rebeccapurple;
+
 }
 /* adjacent sibling combinator */
 h1 + p {
