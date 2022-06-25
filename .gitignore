@@ -4,8 +4,7 @@
 .localdevserver
 /src.orig
 /src
-./localdevserver
-C:\Documents2\GitHub\lwc\.localdevserver
+
 
 # Python
 *.pyc
