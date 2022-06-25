@@ -9,6 +9,9 @@ export default class Counter extends LightningElement {
     }
 
     dec(event) {
+        if (this.counter == 0) {
+            return;
+        }
         this.counter--;
     }
 
