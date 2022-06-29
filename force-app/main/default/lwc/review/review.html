@@ -5,9 +5,9 @@
         <div class="reviewcard rounded">
             <article>
                 <img src={profilephoto} class="imgsize1" alt="Image template">
-                <h1 class="name">{name}</h1>
-                <h1 class="role">{role}</h1>
-                <p> {tagline} </p>
+                <h1 class="name">{infoObject.name}</h1>
+                <h1 class="role">{infoObject.role}</h1>
+                <p>{infoObject.tagline}</p>
                 <br>
                 <div class="buttonrow">
                     <svg onclick={handlePrev} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
