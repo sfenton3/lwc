@@ -1,39 +1,35 @@
 <template>
-    <div class="slds-grid slds-grid_vertical slds-grid_align-center slds-text-align_center">
-        <h1 class="outline"> Our Reviews </h1>
-        <div class="underline"></div>
-        <div class="reviewcard rounded outline">
-            <article>
-                <img src={profilephoto} class="imgsize1" alt="Image template">
-                <h1 class="name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, commodi soluta vel
-                    labore, consequatur cum reprehenderit esse blanditiis perferendis, ut saepe quos amet sunt minima
-                    dolorum! Quibusdam veritatis voluptas enim.</h1>
-                <h1 class="role">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni, voluptatum est
-                    harum beatae repudiandae consequatur reiciendis consequuntur adipisci? Repudiandae, perferendis.
-                    Ipsum minima pariatur nesciunt officia, id deleniti cum earum delectus labore repellendus?
-                    Repudiandae aliquid enim rem tempora ullam ipsa quam atque voluptatibus? Omnis, rerum voluptatum
-                    perferendis laudantium facere amet.</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum harum velit animi consequatur,
-                    officiis perspiciatis fugit deleniti vel incidunt ullam?</p>
-                <br>
-                <div class="buttonrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-arrow-left">
-                        <line x1="19" y1="12" x2="5" y2="12"></line>
-                        <polyline points="12 19 5 12 12 5"></polyline>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-arrow-left">
-                        <line x1="19" y1="12" x2="5" y2="12"></line>
-                        <polyline points="12 19 5 12 12 5"></polyline>
-                    </svg>
-                </div>
-                <br>
-                <lightning-button variant="brand" label="Suprise Me!" title="Primary action" onclick={handleClick}
-                    class="slds-m-left_x-small"></lightning-button>
-            </article>
+    <div class="slds-grid slds-container_small slds-grid_vertical p">
+        <div class="slds-col slds-text-align_center  slds-m-around_small o">
+            Reviews
         </div>
+
+        <div class="slds-col slds-text-align_center slds-p-around_small  slds-m-around_small reviewcard">
+            <!--<img src={profilephoto}>    Need to upload asset/static resource to pass upload-->
+            <p class="slds-text-heading_medium"> {infoObject.name} </p>
+            <p class="slds-text-heading_medium"> {infoObject.role} </p>
+            <br>
+            <p class="slds-text-heading_small"> {infoObject.tagline} </p>
+            <br>
+
+            <lightning-button onclick={handlePrev} variant="base" icon-name="utility:back" icon-position="right">
+            </lightning-button>
+            <lightning-button onclick={handleNext} variant="base" icon-name="utility:forward" icon-position="right">
+            </lightning-button>
+            <div class="o">
+                <lightning-button variant="brand" label="Suprise Me" title="Looks like a link" onclick={handleClick}
+                    class="slds-m-left_x-small"></lightning-button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
     </div>
 </template>

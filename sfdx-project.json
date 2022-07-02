@@ -1,1 +1,25 @@
-{"packageDirectories": [{"path": "force-app", "default": true}], "namespace": null, "sourceApiVersion": "54.0"}
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "lwcTest",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        },
+        {
+            "path": "force-app",
+            "package": "lwcLoose",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+        }
+    ],
+    "namespace": "sfenton",
+    "sourceApiVersion": "54.0",
+    "packageAliases": {
+        "lwcTest": "0Ho8c0000004CTFCA2",
+        "lwcLoose": "0Ho8c0000004CTKCA2",
+        "lwcLoose@0.1.0-1": "04t8c0000016hJgAAI"
+    }
+}

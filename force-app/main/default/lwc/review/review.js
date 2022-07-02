@@ -1,9 +1,9 @@
 import { LightningElement, track } from 'lwc';
-import myimg from '@salesforce/contentAssetUrl/scott';
+//import myimg from '@salesforce/contentAssetUrl/scott';
 
 export default class Review extends LightningElement {
 
-    profilephoto = myimg;
+    //profilephoto = myimg;
     arrayPos = 0;
     arrayLength = 0;
     reviewArray;
@@ -17,7 +17,7 @@ export default class Review extends LightningElement {
         let r1 = {
             name: 'Scott Fenton',
             role: 'Web dev',
-            tagline: 'lorem20'
+            tagline: 'My name is scott and im a web dev with experience using salesforce and LWC'
         };
         let r2 = {
             name: 'Scott Benton',
