@@ -4,7 +4,9 @@
 .localdevserver
 /src.orig
 /src
+.sf/
 .sf
+/.sf
 
 # Python
 *.pyc
