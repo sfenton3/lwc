@@ -4,9 +4,6 @@
 .localdevserver
 /src.orig
 /src
-.sf/
-.sf
-/.sf
 
 # Python
 *.pyc
@@ -26,4 +23,4 @@ robot/lwc/results/
 # Misc
 .DS_Store
 .sf/config.json
-.sf/*
+.sf
