@@ -25,3 +25,5 @@ robot/lwc/results/
 
 # Misc
 .DS_Store
+.sf/config.json
+.sf/*
