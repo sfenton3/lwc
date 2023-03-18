@@ -35,6 +35,12 @@ export default class Stopwatch extends LightningElement {
     stop(event) {
         clearInterval(this.timerID);
         this.active = false;
+
+    }
+
+    //create method to iterate through the array of buttons and set the increment value
+    handleIncrement(event) {
+        this.incr = event.target.value;
     }
 
     reset(event) {
