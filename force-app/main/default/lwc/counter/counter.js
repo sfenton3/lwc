@@ -18,8 +18,4 @@ export default class Counter extends LightningElement {
     reset(event) {
         this.counter = 0;
     }
-
-
-
-
 }

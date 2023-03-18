@@ -1,0 +1,1868 @@
+Insert Animal__c:
+  sf_object: Animal__c
+  table: Animal__c
+  fields:
+  - Animal_Name__c
+  - Count__c
+  - CurrencyIsoCode
+  - Food_Category__c
+  - Name
+  - Park_Name__c
+  - externalID__c
+Insert AppAnalyticsQueryRequest:
+  sf_object: AppAnalyticsQueryRequest
+  table: AppAnalyticsQueryRequest
+  fields:
+  - AvailableSince
+  - DataType
+  - EndTime
+  - FileCompression
+  - FileType
+  - OrganizationIds
+  - PackageIds
+  - StartTime
+Insert Application__c:
+  sf_object: Application__c
+  table: Application__c
+  fields:
+  - Company_Desc__c
+  - Company_Website__c
+  - Cover_Letter__c
+  - CurrencyIsoCode
+  - Name
+  - Response__c
+Insert BusinessHours:
+  sf_object: BusinessHours
+  table: BusinessHours
+  fields:
+  - FridayEndTime
+  - FridayStartTime
+  - IsActive
+  - IsDefault
+  - MondayEndTime
+  - MondayStartTime
+  - Name
+  - SaturdayEndTime
+  - SaturdayStartTime
+  - SundayEndTime
+  - SundayStartTime
+  - ThursdayEndTime
+  - ThursdayStartTime
+  - TimeZoneSidKey
+  - TuesdayEndTime
+  - TuesdayStartTime
+  - WednesdayEndTime
+  - WednesdayStartTime
+Insert Campaign:
+  sf_object: Campaign
+  table: Campaign
+  fields:
+  - ActualCost
+  - BudgetedCost
+  - CurrencyIsoCode
+  - Description
+  - EndDate
+  - ExpectedResponse
+  - ExpectedRevenue
+  - IsActive
+  - Name
+  - NumberSent
+  - StartDate
+  - Status
+  - Type
+  lookups:
+    ParentId:
+      table: Campaign
+      key_field: ParentId
+      after: Insert Campaign
+Insert CaseTeamRole:
+  sf_object: CaseTeamRole
+  table: CaseTeamRole
+  fields:
+  - AccessLevel
+  - Name
+  - PreferencesVisibleInCSP
+Insert CaseTeamTemplate:
+  sf_object: CaseTeamTemplate
+  table: CaseTeamTemplate
+  fields:
+  - Description
+  - Name
+Insert ContentAsset:
+  sf_object: ContentAsset
+  table: ContentAsset
+  fields:
+  - DeveloperName
+  - IsVisibleByExternalUsers
+  - Language
+  - MasterLabel
+Insert ContentVersion:
+  sf_object: ContentVersion
+  table: ContentVersion
+  fields:
+  - ContentLocation
+  - ContentModifiedDate
+  - ContentUrl
+  - CurrencyIsoCode
+  - Description
+  - ExternalDocumentInfo1
+  - ExternalDocumentInfo2
+  - IsAssetEnabled
+  - IsMajorVersion
+  - Language
+  - Origin
+  - PathOnClient
+  - ReasonForChange
+  - SharingOption
+  - SharingPrivacy
+  - TagCsv
+  - Title
+  - VersionData
+Insert CurrencyType:
+  sf_object: CurrencyType
+  table: CurrencyType
+  fields:
+  - ConversionRate
+  - DecimalPlaces
+  - IsActive
+  - IsCorporate
+  - IsoCode
+Insert DatedConversionRate:
+  sf_object: DatedConversionRate
+  table: DatedConversionRate
+  fields:
+  - ConversionRate
+  - IsoCode
+  - StartDate
+Insert Folder:
+  sf_object: Folder
+  table: Folder
+  fields:
+  - AccessType
+  - DeveloperName
+  - IsReadonly
+  - Name
+  - Type
+  lookups:
+    ParentId:
+      table: Folder
+      key_field: ParentId
+      after: Insert Folder
+Insert ListViewChart:
+  sf_object: ListViewChart
+  table: ListViewChart
+  fields:
+  - AggregateField
+  - AggregateType
+  - ChartType
+  - DeveloperName
+  - GroupingField
+  - Language
+  - MasterLabel
+  - SobjectType
+Insert Macro:
+  sf_object: Macro
+  table: Macro
+  fields:
+  - CurrencyIsoCode
+  - Description
+  - Name
+  - StartingContext
+Insert MilestoneType:
+  sf_object: MilestoneType
+  table: MilestoneType
+  fields:
+  - Description
+  - Name
+  - RecurrenceType
+Insert NamespaceRegistry:
+  sf_object: NamespaceRegistry
+  table: NamespaceRegistry
+  fields:
+  - CurrencyIsoCode
+Insert Objective__c:
+  sf_object: Objective__c
+  table: Objective__c
+  fields:
+  - Category__c
+  - Completed__c
+  - CurrencyIsoCode
+  - Description__c
+  - Name
+Insert Pricebook2:
+  sf_object: Pricebook2
+  table: Pricebook2
+  fields:
+  - CurrencyIsoCode
+  - Description
+  - IsActive
+  - Name
+Insert Product2:
+  sf_object: Product2
+  table: Product2
+  fields:
+  - CurrencyIsoCode
+  - Description
+  - DisplayUrl
+  - ExternalId
+  - Family
+  - IsActive
+  - Name
+  - ProductCode
+  - QuantityUnitOfMeasure
+  - StockKeepingUnit
+  - Type
+Insert PushTopic:
+  sf_object: PushTopic
+  table: PushTopic
+  fields:
+  - ApiVersion
+  - Description
+  - IsActive
+  - Name
+  - NotifyForFields
+  - NotifyForOperationCreate
+  - NotifyForOperationDelete
+  - NotifyForOperationUndelete
+  - NotifyForOperationUpdate
+  - Query
+Insert QueueSobject:
+  sf_object: QueueSobject
+  table: QueueSobject
+  fields:
+  - SobjectType
+Insert RedirectWhitelistUrl:
+  sf_object: RedirectWhitelistUrl
+  table: RedirectWhitelistUrl
+  fields:
+  - DeveloperName
+  - Language
+  - MasterLabel
+  - Url
+Insert ScratchOrgInfo:
+  sf_object: ScratchOrgInfo
+  table: ScratchOrgInfo
+  fields:
+  - AdminEmail
+  - ConnectedAppCallbackUrl
+  - ConnectedAppConsumerKey
+  - Country
+  - CurrencyIsoCode
+  - Description
+  - DurationDays
+  - Edition
+  - Features
+  - HasSampleData
+  - Language
+  - Namespace
+  - OrgName
+  - Package2AncestorIds
+  - Release
+  - SourceOrg
+  - Username
+Insert Solution:
+  sf_object: Solution
+  table: Solution
+  fields:
+  - CurrencyIsoCode
+  - IsPublished
+  - IsPublishedInPublicKb
+  - SolutionName
+  - SolutionNote
+  - Status
+Insert TodayGoal:
+  sf_object: TodayGoal
+  table: TodayGoal
+  fields:
+  - CurrencyIsoCode
+  - Value
+Insert dlrs__DeclarativeLookupRollupSummaries__c:
+  sf_object: dlrs__DeclarativeLookupRollupSummaries__c
+  table: dlrs__DeclarativeLookupRollupSummaries__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - dlrs__CalculateJobScopeSize__c
+  - dlrs__HideManageLookupRollupSummariesInfo__c
+  - dlrs__ScheduledJobScopeSize__c
+Insert npe01__Contacts_And_Orgs_Settings__c:
+  sf_object: npe01__Contacts_And_Orgs_Settings__c
+  table: npe01__Contacts_And_Orgs_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npe01__Account_Processor__c
+  - npe01__DISABLE_IndividualAccounts_trigger__c
+  - npe01__DISABLE_OpportunityAccount_trigger__c
+  - npe01__DISABLE_OpportunityContactRoles_trigger__c
+  - npe01__DISABLE_OpportunityPayments_trigger__c
+  - npe01__Default_Opp_on_Convert__c
+  - npe01__Disable_Account_Model_Trigger__c
+  - npe01__Enable_Opportunity_Contact_Role_Trigger__c
+  - npe01__Enable_Update_Check__c
+  - npe01__HH_Account_RecordTypeID__c
+  - npe01__Has_Package_Update__c
+  - npe01__Last_Update_Check__c
+  - npe01__Max_Package_Version__c
+  - npe01__One_to_One_RecordTypeID__c
+  - npe01__Opportunity_Contact_Role_Default_role__c
+  - npe01__Package_Update_URL__c
+  - npe01__Payments_Enabled__c
+  - npe01__Update_Check_Interval__c
+  - npsp__Advancement_Namespace__c
+  - npsp__Automatic_Campaign_Member_Management__c
+  - npsp__Campaign_Member_Non_Responded_Status__c
+  - npsp__Campaign_Member_Responded_Status__c
+  - npsp__Contact_Role_for_Organizational_Opps__c
+  - npsp__Enforce_Accounting_Data_Consistency__c
+  - npsp__Honoree_Opportunity_Contact_Role__c
+  - npsp__Household_Account_Addresses_Disabled__c
+  - npsp__Max_Payments__c
+  - npsp__Notification_Recipient_Opp_Contact_Role__c
+  - npsp__Opp_RecTypes_Excluded_for_Payments__c
+  - npsp__Opp_Types_Excluded_for_Payments__c
+  - npsp__Organizational_Account_Addresses_Enabled__c
+  - npsp__Payments_Auto_Close_Stage_Name__c
+  - npsp__Simple_Address_Change_Treated_as_Update__c
+Insert npe03__Recurring_Donations_Settings__c:
+  sf_object: npe03__Recurring_Donations_Settings__c
+  table: npe03__Recurring_Donations_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npe03__Add_Campaign_to_All_Opportunites__c
+  - npe03__DISABLE_Donations_trigger__c
+  - npe03__DISABLE_RecurringDonations_trigger__c
+  - npe03__Enable_Update_Check__c
+  - npe03__Error_Email_Notifications__c
+  - npe03__Last_Batch_Run__c
+  - npe03__Maximum_Donations__c
+  - npe03__Number_of_Failures__c
+  - npe03__Number_of_Successes__c
+  - npe03__Open_Opportunity_Behavior__c
+  - npe03__Opportunity_Forecast_Months__c
+  - npe03__Record_Type__c
+  - npe03__Update_Check_Interval__c
+  - npsp__DataMigrationBatchSize__c
+  - npsp__DisableRollupsWhenCreatingInstallments__c
+  - npsp__EnableAutomaticNaming__c
+  - npsp__EnableChangeLog__c
+  - npsp__ExcludeClosedRecurringDonations__c
+  - npsp__InstallmentOppAutoCreateOption__c
+  - npsp__InstallmentOppFirstCreateMode__c
+  - npsp__InstallmentOppStageName__c
+  - npsp__IsRecurringDonations2Enabled__c
+  - npsp__NextDonationDateMatchRangeDays__c
+  - npsp__RecurringDonationNameFormat__c
+  - npsp__RecurringDonations2EnablementState__c
+  - npsp__RecurringDonations2MigrationState__c
+  - npsp__Recurring_Donation_Batch_Size__c
+  - npsp__StatusAutomationClosedValue__c
+  - npsp__StatusAutomationDaysForClosed__c
+  - npsp__StatusAutomationDaysForLapsed__c
+  - npsp__StatusAutomationLapsedValue__c
+  - npsp__StatusMappingDeploymentId__c
+  - npsp__UseFiscalYearForRecurringDonationValue__c
+Insert npe4__Relationship_Settings__c:
+  sf_object: npe4__Relationship_Settings__c
+  table: npe4__Relationship_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npe4__Allow_AutoCreated_Duplicates__c
+  - npe4__DISABLE_RelationshipCM_trigger__c
+  - npe4__DISABLE_RelationshipContacts_trigger__c
+  - npe4__DISABLE_Relationships_trigger__c
+  - npe4__Force_Synchronous_Auto_Create__c
+  - npe4__Gender_Field__c
+  - npe4__Reciprocal_Method__c
+  - npe4__Relationship_Name_Field_Id__c
+  - npe4__Relationship_Name_Id_Field_Id__c
+  - npsp__Enable_Custom_Field_Sync__c
+Insert npe5__Affiliations_Settings__c:
+  sf_object: npe5__Affiliations_Settings__c
+  table: npe5__Affiliations_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npe5__Automatic_Affiliation_Creation_Turned_On__c
+Insert npo02__Households_Settings__c:
+  sf_object: npo02__Households_Settings__c
+  table: npo02__Households_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npo02__Advanced_Household_Naming__c
+  - npo02__Always_Rollup_to_Primary_Contact__c
+  - npo02__Async_Household_Naming__c
+  - npo02__Batch_Size__c
+  - npo02__DISABLE_HouseholdAfter_trigger__c
+  - npo02__DISABLE_HouseholdBefore_trigger__c
+  - npo02__DISABLE_Household_Opportunity_trigger__c
+  - npo02__DISABLE_Households_trigger__c
+  - npo02__DISABLE_OpportunityRollup_trigger__c
+  - npo02__Enable_Opp_Rollup_Triggers__c
+  - npo02__Enable_Soft_Credit_Rollups__c
+  - npo02__Enable_Update_Check__c
+  - npo02__Excluded_Account_Opp_Rectypes__c
+  - npo02__Excluded_Account_Opp_Types__c
+  - npo02__Excluded_Contact_Opp_Rectypes__c
+  - npo02__Excluded_Contact_Opp_Types__c
+  - npo02__Force_Fiscal_Year__c
+  - npo02__Has_Package_Update__c
+  - npo02__Household_Contact_Roles_On__c
+  - npo02__Household_Creation_Excluded_Recordtypes__c
+  - npo02__Household_Mailing_List_ID__c
+  - npo02__Household_Member_Contact_Role__c
+  - npo02__Household_OCR_Excluded_Recordtypes__c
+  - npo02__Household_Rules__c
+  - npo02__Last_Update_Check__c
+  - npo02__Max_Package_Version__c
+  - npo02__Membership_Grace_Period__c
+  - npo02__Membership_Record_Types__c
+  - npo02__Opp_Rollup_Scheduled_Job_Id__c
+  - npo02__Package_Update_URL__c
+  - npo02__Rollup_N_Day_Value__c
+  - npo02__Schedule_Job_Limit__c
+  - npo02__Soft_Credit_Roles__c
+  - npo02__Update_Check_Interval__c
+  - npo02__Use_Fiscal_Year_for_Rollups__c
+  - npsp__Matched_Donor_Role__c
+  - npsp__Seasonal_Addresses_Batch_Size__c
+  - npsp__Use_Dated_Conversion_Rates__c
+Insert npsp__Allocations_Settings__c:
+  sf_object: npsp__Allocations_Settings__c
+  table: npsp__Allocations_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__Default_Allocations_Enabled__c
+  - npsp__Default__c
+  - npsp__Excluded_Opp_RecTypes__c
+  - npsp__Excluded_Opp_Types__c
+  - npsp__Payment_Allocations_Enabled__c
+  - npsp__Rollup_N_Day_Value__c
+  - npsp__Use_Fiscal_Year_for_Rollups__c
+Insert npsp__Batch_Data_Entry_Settings__c:
+  sf_object: npsp__Batch_Data_Entry_Settings__c
+  table: npsp__Batch_Data_Entry_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__Allow_Blank_Opportunity_Names__c
+  - npsp__Opportunity_Naming__c
+  - npsp__Viewed_Retirement_Alert__c
+Insert npsp__Customizable_Rollup_Settings__c:
+  sf_object: npsp__Customizable_Rollup_Settings__c
+  table: npsp__Customizable_Rollup_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__AccountHardCreditNonSkew_Incremental__c
+  - npsp__CMT_API_Status__c
+  - npsp__ChunkSize_Account_HardCredit__c
+  - npsp__ChunkSize_Contact_HardCredit__c
+  - npsp__ChunkSize_Contact_SoftCredit__c
+  - npsp__ContactHardCreditNonSkew_Incremental__c
+  - npsp__Customizable_Rollups_Enabled__c
+  - npsp__Disable_Related_Records_Filter__c
+  - npsp__LimitRecalculatedRecurringDonations__c
+  - npsp__RecurringDonationLastNDays__c
+  - npsp__Rollups_Account_Batch_Size__c
+  - npsp__Rollups_Account_SkewMode_Batch_Size__c
+  - npsp__Rollups_Account_Soft_Credit_Batch_Size__c
+  - npsp__Rollups_AcctContactSoftCredit_Batch_Size__c
+  - npsp__Rollups_Contact_Batch_Size__c
+  - npsp__Rollups_Contact_SkewMode_Batch_Size__c
+  - npsp__Rollups_Contact_Soft_Credit_Batch_Size__c
+  - npsp__Rollups_GAU_Batch_Size__c
+  - npsp__Rollups_IncrementalLastNDays_FldOverride__c
+  - npsp__Rollups_IncrementalLastNDays_ValOverride__c
+  - npsp__Rollups_Limit_on_Attached_Opps_for_Skew__c
+  - npsp__Rollups_Skew_Dispatcher_Batch_Size__c
+Insert npsp__Data_Import_Settings__c:
+  sf_object: npsp__Data_Import_Settings__c
+  table: npsp__Data_Import_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__Account_Custom_Unique_ID__c
+  - npsp__Account_Matching_Rule__c
+  - npsp__Batch_Size__c
+  - npsp__CMT_API_Status__c
+  - npsp__CMT_Deployment_ID__c
+  - npsp__Contact_Custom_Unique_ID__c
+  - npsp__Contact_Matching_Rule__c
+  - npsp__Default_Data_Import_Field_Mapping_Set__c
+  - npsp__Donation_Date_Range__c
+  - npsp__Donation_Matching_Behavior__c
+  - npsp__Donation_Matching_Implementing_Class__c
+  - npsp__Donation_Matching_Rule__c
+  - npsp__Field_Mapping_Method__c
+  - npsp__Post_Process_Implementing_Class__c
+  - npsp__Run_Opportunity_Rollups_while_Processing__c
+Insert npsp__Error_Settings__c:
+  sf_object: npsp__Error_Settings__c
+  table: npsp__Error_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__Async_Error_Check_Last_Run__c
+  - npsp__DisableRecordDataHealthChecks__c
+  - npsp__Disable_Error_Handling__c
+  - npsp__Don_t_Auto_Schedule_Default_NPSP_Jobs__c
+  - npsp__Enable_Debug__c
+  - npsp__Error_Notifications_On__c
+  - npsp__Error_Notifications_To__c
+  - npsp__OverrideFeature_PilotEnabled__c
+  - npsp__Respect_Duplicate_Rule_Settings__c
+  - npsp__Store_Errors_On__c
+Insert npsp__Error__c:
+  sf_object: npsp__Error__c
+  table: npsp__Error__c
+  fields:
+  - CurrencyIsoCode
+  - npsp__Context_Type__c
+  - npsp__Datetime__c
+  - npsp__Email_Sent__c
+  - npsp__Error_Type__c
+  - npsp__Full_Message__c
+  - npsp__Object_Type__c
+  - npsp__Posted_in_Chatter__c
+  - npsp__Record_URL__c
+  - npsp__Related_Record_ID__c
+  - npsp__Retry_Pending__c
+  - npsp__Stack_Trace__c
+Insert npsp__Gift_Entry_Settings__c:
+  sf_object: npsp__Gift_Entry_Settings__c
+  table: npsp__Gift_Entry_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__Default_Gift_Entry_Template__c
+  - npsp__Enable_Gateway_Assignment__c
+  - npsp__Enable_Gift_Entry__c
+  - npsp__Enable_Recurring_Donations_in_Gift_Entry__c
+Insert npsp__Household_Naming_Settings__c:
+  sf_object: npsp__Household_Naming_Settings__c
+  table: npsp__Household_Naming_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__Contact_Overrun_Count__c
+  - npsp__Formal_Greeting_Format__c
+  - npsp__Household_Name_Format__c
+  - npsp__Implementing_Class__c
+  - npsp__Informal_Greeting_Format__c
+  - npsp__Name_Connector__c
+  - npsp__Name_Overrun__c
+Insert npsp__Levels_Settings__c:
+  sf_object: npsp__Levels_Settings__c
+  table: npsp__Levels_Settings__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__LastJobStartTimeAccount__c
+  - npsp__LastJobStartTimeContact__c
+  - npsp__Level_Assignment_Batch_Size__c
+Insert npsp__Trigger_Handler__c:
+  sf_object: npsp__Trigger_Handler__c
+  table: npsp__Trigger_Handler__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - npsp__Active__c
+  - npsp__Asynchronous__c
+  - npsp__Class__c
+  - npsp__Load_Order__c
+  - npsp__Object__c
+  - npsp__Trigger_Action__c
+  - npsp__User_Managed__c
+  - npsp__Usernames_to_Exclude__c
+Insert parent__c:
+  sf_object: parent__c
+  table: parent__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+Insert sf_devops__Repository__c:
+  sf_object: sf_devops__Repository__c
+  table: sf_devops__Repository__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - sf_devops__Default_Branch__c
+  - sf_devops__GitHub_Owner__c
+  - sf_devops__GitHub_Repo__c
+  - sf_devops__Last_Event__c
+  - sf_devops__Named_Credential__c
+  - sf_devops__Polling_Interval__c
+  - sf_devops__Provider__c
+Insert sf_devops__Async_Operation_Result__c:
+  sf_object: sf_devops__Async_Operation_Result__c
+  table: sf_devops__Async_Operation_Result__c
+  fields:
+  - sf_devops__Log_Id__c
+  - sf_devops__Operation__c
+Insert npsp__Engagement_Plan_Template__c:
+  sf_object: npsp__Engagement_Plan_Template__c
+  table: npsp__Engagement_Plan_Template__c
+Insert npe03__Recurring_Donation__c:
+  sf_object: npe03__Recurring_Donation__c
+  table: npe03__Recurring_Donation__c
+Insert npsp__Batch__c:
+  sf_object: npsp__Batch__c
+  table: npsp__Batch__c
+  fields:
+  - npsp__Object_Name__c
+Insert DandBCompany:
+  sf_object: DandBCompany
+  table: DandBCompany
+  fields:
+  - DunsNumber
+  - Name
+Insert Individual:
+  sf_object: Individual
+  table: Individual
+  fields:
+  - LastName
+Insert Asset:
+  sf_object: Asset
+  table: Asset
+  fields:
+  - Name
+Insert Location:
+  sf_object: Location
+  table: Location
+  fields:
+  - LocationType
+  - Name
+Insert ServiceContract:
+  sf_object: ServiceContract
+  table: ServiceContract
+  fields:
+  - Name
+Insert OperatingHours:
+  sf_object: OperatingHours
+  table: OperatingHours
+  fields:
+  - Name
+  - TimeZone
+Insert EmailTemplate:
+  sf_object: EmailTemplate
+  table: EmailTemplate
+  fields:
+  - Name
+  - TemplateStyle
+  - TemplateType
+Insert npo02__Household__c:
+  sf_object: npo02__Household__c
+  table: npo02__Household__c
+Insert ApexClass:
+  sf_object: ApexClass
+  table: ApexClass
+  fields:
+  - ApiVersion
+  - LengthWithoutComments
+  - Name
+  - Status
+Insert ActiveScratchOrg:
+  sf_object: ActiveScratchOrg
+  table: ActiveScratchOrg
+  fields:
+  - CurrencyIsoCode
+  - Description
+  lookups:
+    ScratchOrgInfoId:
+      table: ScratchOrgInfo
+      key_field: ScratchOrgInfoId
+Insert AppointmentSchedulingPolicy:
+  sf_object: AppointmentSchedulingPolicy
+  table: AppointmentSchedulingPolicy
+  fields:
+  - AppointmentStartTimeInterval
+  - DeveloperName
+  - IsSvcTerrOpHoursWithShiftsUsed
+  - IsSvcTerritoryMemberShiftUsed
+  - Language
+  - MasterLabel
+  - ShouldConsiderCalendarEvents
+  - ShouldEnforceExcludedResource
+  - ShouldEnforceRequiredResource
+  - ShouldMatchSkill
+  - ShouldMatchSkillLevel
+  - ShouldRespectVisitingHours
+  - ShouldUsePrimaryMembers
+  - ShouldUseSecondaryMembers
+  lookups:
+    ExtCalEventHandlerId:
+      table: ApexClass
+      key_field: ExtCalEventHandlerId
+Insert AuthProvider:
+  sf_object: AuthProvider
+  table: AuthProvider
+  fields:
+  - AppleTeam
+  - AuthorizeUrl
+  - ConsumerKey
+  - ConsumerSecret
+  - CustomMetadataTypeRecord
+  - DefaultScopes
+  - DeveloperName
+  - EcKey
+  - ErrorUrl
+  - FriendlyName
+  - IconUrl
+  - IdTokenIssuer
+  - LogoutUrl
+  - OptionsIncludeOrgIdInId
+  - OptionsSendAccessTokenInHeader
+  - OptionsSendClientCredentialsInHeader
+  - OptionsSendSecretInApis
+  - ProviderType
+  - TokenUrl
+  - UserInfoUrl
+  lookups:
+    PluginId:
+      table: ApexClass
+      key_field: PluginId
+    RegistrationHandlerId:
+      table: ApexClass
+      key_field: RegistrationHandlerId
+Insert CampaignMemberStatus:
+  sf_object: CampaignMemberStatus
+  table: CampaignMemberStatus
+  fields:
+  - HasResponded
+  - IsDefault
+  - Label
+  - SortOrder
+  lookups:
+    CampaignId:
+      table: Campaign
+      key_field: CampaignId
+Insert CaseTeamTemplateMember:
+  sf_object: CaseTeamTemplateMember
+  table: CaseTeamTemplateMember
+  lookups:
+    TeamRoleId:
+      table: CaseTeamRole
+      key_field: TeamRoleId
+    TeamTemplateId:
+      table: CaseTeamTemplate
+      key_field: TeamTemplateId
+Insert Child__c:
+  sf_object: Child__c
+  table: Child__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  lookups:
+    parent__c:
+      table: parent__c
+      key_field: parent__c
+Insert ContentWorkspace:
+  sf_object: ContentWorkspace
+  table: ContentWorkspace
+  fields:
+  - Description
+  - DeveloperName
+  - Name
+  - ShouldAddCreatorMembership
+  lookups:
+    WorkspaceImageId:
+      table: ContentAsset
+      key_field: WorkspaceImageId
+Insert Interview__c:
+  sf_object: Interview__c
+  table: Interview__c
+  fields:
+  - CurrencyIsoCode
+  - Interview_Company__c
+  - Interviewer_Email__c
+  - Interviewer__c
+  - Length_of_Interview__c
+  - Name
+  - Notes__c
+  - Repeat_Name__c
+  lookups:
+    Application__c:
+      table: Application__c
+      key_field: Application__c
+Insert Lead:
+  sf_object: Lead
+  table: Lead
+  fields:
+  - AnnualRevenue
+  - City
+  - CleanStatus
+  - Company
+  - CompanyDunsNumber
+  - Country
+  - CurrencyIsoCode
+  - CurrentGenerators__c
+  - Description
+  - DoNotCall
+  - Email
+  - Fax
+  - FirstName
+  - GeocodeAccuracy
+  - HasOptedOutOfEmail
+  - HasOptedOutOfFax
+  - Industry
+  - IsConverted
+  - IsUnreadByOwner
+  - Jigsaw
+  - LastName
+  - Latitude
+  - LeadSource
+  - Longitude
+  - MobilePhone
+  - NumberOfEmployees
+  - NumberofLocations__c
+  - Phone
+  - PostalCode
+  - Primary__c
+  - ProductInterest__c
+  - Rating
+  - SICCode__c
+  - Salutation
+  - State
+  - Status
+  - Street
+  - Title
+  - Website
+  - npe01__Preferred_Email__c
+  - npe01__Preferred_Phone__c
+  - npsp__CompanyCity__c
+  - npsp__CompanyCountry__c
+  - npsp__CompanyPostalCode__c
+  - npsp__CompanyState__c
+  - npsp__CompanyStreet__c
+  lookups:
+    DandbCompanyId:
+      table: DandBCompany
+      key_field: DandbCompanyId
+    IndividualId:
+      table: Individual
+      key_field: IndividualId
+    npsp__Batch__c:
+      table: npsp__Batch__c
+      key_field: npsp__Batch__c
+Insert PricebookEntry:
+  sf_object: PricebookEntry
+  table: PricebookEntry
+  fields:
+  - CurrencyIsoCode
+  - IsActive
+  - UnitPrice
+  - UseStandardPrice
+  lookups:
+    Pricebook2Id:
+      table: Pricebook2
+      key_field: Pricebook2Id
+    Product2Id:
+      table: Product2
+      key_field: Product2Id
+Insert Time_Log__c:
+  sf_object: Time_Log__c
+  table: Time_Log__c
+  fields:
+  - CurrencyIsoCode
+  - Description__c
+  - Name
+  - Time_spent_hours__c
+  lookups:
+    Objective__c:
+      table: Objective__c
+      key_field: Objective__c
+Insert sf_devops__Branch__c:
+  sf_object: sf_devops__Branch__c
+  table: sf_devops__Branch__c
+  fields:
+  - CurrencyIsoCode
+  - sf_devops__Ignore_Rules__c
+  - sf_devops__Name__c
+  - sf_devops__Parent_Remote_Reference__c
+  - sf_devops__Remote_Reference__c
+  lookups:
+    sf_devops__Repository__c:
+      table: sf_devops__Repository__c
+      key_field: sf_devops__Repository__c
+Insert sf_devops__Project__c:
+  sf_object: sf_devops__Project__c
+  table: sf_devops__Project__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - sf_devops__Description__c
+  - sf_devops__Hidden__c
+  - sf_devops__Package_Directories__c
+  lookups:
+    sf_devops__Platform_Repository__c:
+      table: sf_devops__Repository__c
+      key_field: sf_devops__Platform_Repository__c
+Insert npsp__Engagement_Plan_Task__c:
+  sf_object: npsp__Engagement_Plan_Task__c
+  table: npsp__Engagement_Plan_Task__c
+  lookups:
+    npsp__Engagement_Plan_Template__c:
+      table: npsp__Engagement_Plan_Template__c
+      key_field: npsp__Engagement_Plan_Template__c
+Insert npsp__Engagement_Plan__c:
+  sf_object: npsp__Engagement_Plan__c
+  table: npsp__Engagement_Plan__c
+  lookups:
+    npsp__Engagement_Plan_Template__c:
+      table: npsp__Engagement_Plan_Template__c
+      key_field: npsp__Engagement_Plan_Template__c
+Insert ContentWorkspaceDoc:
+  sf_object: ContentWorkspaceDoc
+  table: ContentWorkspaceDoc
+  lookups:
+    ContentWorkspaceId:
+      table: ContentWorkspace
+      key_field: ContentWorkspaceId
+Insert ContentWorkspaceMember:
+  sf_object: ContentWorkspaceMember
+  table: ContentWorkspaceMember
+  lookups:
+    ContentWorkspaceId:
+      table: ContentWorkspace
+      key_field: ContentWorkspaceId
+Insert Event:
+  sf_object: Event
+  table: Event
+  fields:
+  - ActivityDate
+  - ActivityDateTime
+  - CurrencyIsoCode
+  - Description
+  - DurationInMinutes
+  - EndDateTime
+  - EventSubtype
+  - IsAllDayEvent
+  - IsPrivate
+  - IsRecurrence
+  - IsReminderSet
+  - Location
+  - Recurrence2PatternText
+  - RecurrenceDayOfMonth
+  - RecurrenceDayOfWeekMask
+  - RecurrenceEndDateOnly
+  - RecurrenceInstance
+  - RecurrenceInterval
+  - RecurrenceMonthOfYear
+  - RecurrenceStartDateTime
+  - RecurrenceTimeZoneSidKey
+  - RecurrenceType
+  - ReminderDateTime
+  - ShowAs
+  - StartDateTime
+  - Subject
+  lookups:
+    npsp__Engagement_Plan_Task__c:
+      table: npsp__Engagement_Plan_Task__c
+      key_field: npsp__Engagement_Plan_Task__c
+    npsp__Engagement_Plan__c:
+      table: npsp__Engagement_Plan__c
+      key_field: npsp__Engagement_Plan__c
+Insert Task:
+  sf_object: Task
+  table: Task
+  fields:
+  - ActivityDate
+  - CallDisposition
+  - CallDurationInSeconds
+  - CallObject
+  - CallType
+  - CurrencyIsoCode
+  - Description
+  - IsRecurrence
+  - IsReminderSet
+  - Priority
+  - RecurrenceDayOfMonth
+  - RecurrenceDayOfWeekMask
+  - RecurrenceEndDateOnly
+  - RecurrenceInstance
+  - RecurrenceInterval
+  - RecurrenceMonthOfYear
+  - RecurrenceRegeneratedType
+  - RecurrenceStartDateOnly
+  - RecurrenceTimeZoneSidKey
+  - RecurrenceType
+  - ReminderDateTime
+  - Status
+  - Subject
+  - TaskSubtype
+  - RecordTypeId
+  lookups:
+    npsp__Engagement_Plan_Task__c:
+      table: npsp__Engagement_Plan_Task__c
+      key_field: npsp__Engagement_Plan_Task__c
+    npsp__Engagement_Plan__c:
+      table: npsp__Engagement_Plan__c
+      key_field: npsp__Engagement_Plan__c
+Insert sf_devops__Environment__c:
+  sf_object: sf_devops__Environment__c
+  table: sf_devops__Environment__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - sf_devops__Can_Track_Changes__c
+  - sf_devops__Expired__c
+  - sf_devops__Last_Revision_Counter__c
+  - sf_devops__Named_Credential__c
+  - sf_devops__Org_Id__c
+  - sf_devops__Refresh_Date__c
+  - sf_devops__Test_Environment__c
+  lookups:
+    sf_devops__Operation_Result__c:
+      table: sf_devops__Async_Operation_Result__c
+      key_field: sf_devops__Operation_Result__c
+    sf_devops__Project__c:
+      table: sf_devops__Project__c
+      key_field: sf_devops__Project__c
+    sf_devops__Refresh_Source__c:
+      table: sf_devops__Environment__c
+      key_field: sf_devops__Refresh_Source__c
+      after: Insert sf_devops__Environment__c
+    sf_devops__Replaces__c:
+      table: sf_devops__Environment__c
+      key_field: sf_devops__Replaces__c
+      after: Insert sf_devops__Environment__c
+Insert sf_devops__Pipeline__c:
+  sf_object: sf_devops__Pipeline__c
+  table: sf_devops__Pipeline__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - sf_devops__Activated__c
+  lookups:
+    sf_devops__Project__c:
+      table: sf_devops__Project__c
+      key_field: sf_devops__Project__c
+Insert sf_devops__Change_Bundle__c:
+  sf_object: sf_devops__Change_Bundle__c
+  table: sf_devops__Change_Bundle__c
+  fields:
+  - sf_devops__Version_Name__c
+  lookups:
+    sf_devops__Project__c:
+      table: sf_devops__Project__c
+      key_field: sf_devops__Project__c
+Insert ContractLineItem:
+  sf_object: ContractLineItem
+  table: ContractLineItem
+  fields:
+  - Quantity
+  - UnitPrice
+  lookups:
+    PricebookEntryId:
+      table: PricebookEntry
+      key_field: PricebookEntryId
+    ServiceContractId:
+      table: ServiceContract
+      key_field: ServiceContractId
+Insert sf_devops__Pipeline_Stage__c:
+  sf_object: sf_devops__Pipeline_Stage__c
+  table: sf_devops__Pipeline_Stage__c
+  fields:
+  - CurrencyIsoCode
+  - Name
+  - sf_devops__Branch_Name__c
+  - sf_devops__Branch_Remote_Reference__c
+  - sf_devops__Promote_Review_Remote_Reference__c
+  - sf_devops__Versioned__c
+  lookups:
+    sf_devops__Branch__c:
+      table: sf_devops__Branch__c
+      key_field: sf_devops__Branch__c
+    sf_devops__Environment__c:
+      table: sf_devops__Environment__c
+      key_field: sf_devops__Environment__c
+    sf_devops__Next_Stage__c:
+      table: sf_devops__Pipeline_Stage__c
+      key_field: sf_devops__Next_Stage__c
+      after: Insert sf_devops__Pipeline_Stage__c
+    sf_devops__Operation_Status__c:
+      table: sf_devops__Async_Operation_Result__c
+      key_field: sf_devops__Operation_Status__c
+    sf_devops__Pipeline__c:
+      table: sf_devops__Pipeline__c
+      key_field: sf_devops__Pipeline__c
+    sf_devops__Swap_Status__c:
+      table: sf_devops__Async_Operation_Result__c
+      key_field: sf_devops__Swap_Status__c
+Insert sf_devops__Work_Item__c:
+  sf_object: sf_devops__Work_Item__c
+  table: sf_devops__Work_Item__c
+  fields:
+  - CurrencyIsoCode
+  - sf_devops__Branch_Name__c
+  - sf_devops__Branch_Parent_Remote_Reference__c
+  - sf_devops__Branch_Remote_Reference__c
+  - sf_devops__Concluded__c
+  - sf_devops__Description__c
+  - sf_devops__Development_Approved__c
+  - sf_devops__Promoted__c
+  - sf_devops__Review_Remote_Reference__c
+  - sf_devops__Subject__c
+  lookups:
+    sf_devops__Branch__c:
+      table: sf_devops__Branch__c
+      key_field: sf_devops__Branch__c
+    sf_devops__Change_Bundle__c:
+      table: sf_devops__Change_Bundle__c
+      key_field: sf_devops__Change_Bundle__c
+    sf_devops__Environment__c:
+      table: sf_devops__Environment__c
+      key_field: sf_devops__Environment__c
+    sf_devops__Operation_Status__c:
+      table: sf_devops__Async_Operation_Result__c
+      key_field: sf_devops__Operation_Status__c
+    sf_devops__Project__c:
+      table: sf_devops__Project__c
+      key_field: sf_devops__Project__c
+    sf_devops__Promoted_From_Environment__c:
+      table: sf_devops__Environment__c
+      key_field: sf_devops__Promoted_From_Environment__c
+Insert sf_devops__Vcs_Event__c:
+  sf_object: sf_devops__Vcs_Event__c
+  table: sf_devops__Vcs_Event__c
+  fields:
+  - CurrencyIsoCode
+  - sf_devops__Event_Date__c
+  - sf_devops__Event_Id__c
+  - sf_devops__Handled__c
+  - sf_devops__Payload__c
+  - sf_devops__Source_Branch__c
+  - sf_devops__Target_Branch__c
+  lookups:
+    sf_devops__Operation_Status__c:
+      table: sf_devops__Async_Operation_Result__c
+      key_field: sf_devops__Operation_Status__c
+    sf_devops__Repository__c:
+      table: sf_devops__Repository__c
+      key_field: sf_devops__Repository__c
+    sf_devops__Target_Pipeline_Stage__c:
+      table: sf_devops__Pipeline_Stage__c
+      key_field: sf_devops__Target_Pipeline_Stage__c
+    sf_devops__Target_Work_Item__c:
+      table: sf_devops__Work_Item__c
+      key_field: sf_devops__Target_Work_Item__c
+Insert sf_devops__Change_Submission__c:
+  sf_object: sf_devops__Change_Submission__c
+  table: sf_devops__Change_Submission__c
+  fields:
+  - sf_devops__Submitted_On__c
+  lookups:
+    sf_devops__Repository__c:
+      table: sf_devops__Repository__c
+      key_field: sf_devops__Repository__c
+    sf_devops__Work_Item__c:
+      table: sf_devops__Work_Item__c
+      key_field: sf_devops__Work_Item__c
+Insert sf_devops__Object_Activity__c:
+  sf_object: sf_devops__Object_Activity__c
+  table: sf_devops__Object_Activity__c
+  fields:
+  - CurrencyIsoCode
+  - sf_devops__Activity_Date__c
+  - sf_devops__Activity_Type__c
+  - sf_devops__Hidden__c
+  - sf_devops__Message__c
+  - sf_devops__Summary__c
+  lookups:
+    sf_devops__Change_Submission__c:
+      table: sf_devops__Change_Submission__c
+      key_field: sf_devops__Change_Submission__c
+    sf_devops__Environment__c:
+      table: sf_devops__Environment__c
+      key_field: sf_devops__Environment__c
+    sf_devops__Operation_Result__c:
+      table: sf_devops__Async_Operation_Result__c
+      key_field: sf_devops__Operation_Result__c
+    sf_devops__Parent_Activity__c:
+      table: sf_devops__Object_Activity__c
+      key_field: sf_devops__Parent_Activity__c
+      after: Insert sf_devops__Object_Activity__c
+    sf_devops__Pipeline__c:
+      table: sf_devops__Pipeline__c
+      key_field: sf_devops__Pipeline__c
+    sf_devops__Project__c:
+      table: sf_devops__Project__c
+      key_field: sf_devops__Project__c
+    sf_devops__Target_Pipeline_Stage__c:
+      table: sf_devops__Pipeline_Stage__c
+      key_field: sf_devops__Target_Pipeline_Stage__c
+    sf_devops__Work_Item__c:
+      table: sf_devops__Work_Item__c
+      key_field: sf_devops__Work_Item__c
+Insert Account:
+  sf_object: Account
+  table: Account
+  fields:
+  - AccountNumber
+  - AccountSource
+  - Active__c
+  - AnnualRevenue
+  - Annual_Revenue_Rollup__c
+  - BillingCity
+  - BillingCountry
+  - BillingGeocodeAccuracy
+  - BillingLatitude
+  - BillingLongitude
+  - BillingPostalCode
+  - BillingState
+  - BillingStreet
+  - CleanStatus
+  - CurrencyIsoCode
+  - CustomerPriority__c
+  - Description
+  - DunsNumber
+  - Fax
+  - Industry
+  - Jigsaw
+  - Match_Billing_Address__c
+  - My_Text__c
+  - NaicsCode
+  - NaicsDesc
+  - Name
+  - NumberOfEmployees
+  - Number_Of_Contacts__c
+  - NumberofLocations__c
+  - Ownership
+  - Phone
+  - Rating
+  - Rollup_Amount__c
+  - SLAExpirationDate__c
+  - SLASerialNumber__c
+  - SLA__c
+  - ShippingCity
+  - ShippingCountry
+  - ShippingGeocodeAccuracy
+  - ShippingLatitude
+  - ShippingLongitude
+  - ShippingPostalCode
+  - ShippingState
+  - ShippingStreet
+  - Sic
+  - SicDesc
+  - Site
+  - TickerSymbol
+  - Tradestyle
+  - Type
+  - UpsellOpportunity__c
+  - Website
+  - YearStarted
+  - npe01__SYSTEMIsIndividual__c
+  - npe01__SYSTEM_AccountType__c
+  - npo02__AverageAmount__c
+  - npo02__Best_Gift_Year_Total__c
+  - npo02__Best_Gift_Year__c
+  - npo02__FirstCloseDate__c
+  - npo02__Formal_Greeting__c
+  - npo02__HouseholdPhone__c
+  - npo02__Informal_Greeting__c
+  - npo02__LargestAmount__c
+  - npo02__LastCloseDate__c
+  - npo02__LastMembershipAmount__c
+  - npo02__LastMembershipDate__c
+  - npo02__LastMembershipLevel__c
+  - npo02__LastMembershipOrigin__c
+  - npo02__LastOppAmount__c
+  - npo02__MembershipEndDate__c
+  - npo02__MembershipJoinDate__c
+  - npo02__NumberOfClosedOpps__c
+  - npo02__NumberOfMembershipOpps__c
+  - npo02__OppAmount2YearsAgo__c
+  - npo02__OppAmountLastNDays__c
+  - npo02__OppAmountLastYear__c
+  - npo02__OppAmountThisYear__c
+  - npo02__OppsClosed2YearsAgo__c
+  - npo02__OppsClosedLastNDays__c
+  - npo02__OppsClosedLastYear__c
+  - npo02__OppsClosedThisYear__c
+  - npo02__SYSTEM_CUSTOM_NAMING__c
+  - npo02__SmallestAmount__c
+  - npo02__TotalMembershipOppAmount__c
+  - npo02__TotalOppAmount__c
+  - npsp__All_Members_Deceased__c
+  - npsp__CustomizableRollups_UseSkewMode__c
+  - npsp__Funding_Focus__c
+  - npsp__Grantmaker__c
+  - npsp__Matching_Gift_Administrator_Name__c
+  - npsp__Matching_Gift_Amount_Max__c
+  - npsp__Matching_Gift_Amount_Min__c
+  - npsp__Matching_Gift_Annual_Employee_Max__c
+  - npsp__Matching_Gift_Comments__c
+  - npsp__Matching_Gift_Company__c
+  - npsp__Matching_Gift_Email__c
+  - npsp__Matching_Gift_Info_Updated__c
+  - npsp__Matching_Gift_Percent__c
+  - npsp__Matching_Gift_Phone__c
+  - npsp__Matching_Gift_Request_Deadline__c
+  - npsp__Number_of_Household_Members__c
+  - npsp__Sustainer__c
+  - npsp__Undeliverable_Address__c
+  - RecordTypeId
+  lookups:
+    DandbCompanyId:
+      table: DandBCompany
+      key_field: DandbCompanyId
+    OperatingHoursId:
+      table: OperatingHours
+      key_field: OperatingHoursId
+    ParentId:
+      table: Account
+      key_field: ParentId
+      after: Insert Account
+    npe01__One2OneContact__c:
+      table: Contact
+      key_field: npe01__One2OneContact__c
+      after: Insert Contact
+    npsp__Batch__c:
+      table: npsp__Batch__c
+      key_field: npsp__Batch__c
+Insert Entitlement:
+  sf_object: Entitlement
+  table: Entitlement
+  fields:
+  - CasesPerEntitlement
+  - CurrencyIsoCode
+  - EndDate
+  - IsPerIncident
+  - Name
+  - RemainingCases
+  - RemainingWorkOrders
+  - StartDate
+  - Type
+  - WorkOrdersPerEntitlement
+  lookups:
+    AccountId:
+      table: Account
+      key_field: AccountId
+    AssetId:
+      table: Asset
+      key_field: AssetId
+    BusinessHoursId:
+      table: BusinessHours
+      key_field: BusinessHoursId
+    ContractLineItemId:
+      table: ContractLineItem
+      key_field: ContractLineItemId
+    LocationId:
+      table: Location
+      key_field: LocationId
+    ServiceContractId:
+      table: ServiceContract
+      key_field: ServiceContractId
+    SvcApptBookingWindowsId:
+      table: OperatingHours
+      key_field: SvcApptBookingWindowsId
+Insert npsp__Address__c:
+  sf_object: npsp__Address__c
+  table: npsp__Address__c
+  fields:
+  - CurrencyIsoCode
+  - npsp__API_Response__c
+  - npsp__Address_Type__c
+  - npsp__Administrative_Area__c
+  - npsp__Ambiguous__c
+  - npsp__Congressional_District__c
+  - npsp__County_Name__c
+  - npsp__Default_Address__c
+  - npsp__Exclude_from_Updates__c
+  - npsp__Geolocation__Latitude__s
+  - npsp__Geolocation__Longitude__s
+  - npsp__Latest_End_Date__c
+  - npsp__Latest_Start_Date__c
+  - npsp__MailingCity__c
+  - npsp__MailingCountry__c
+  - npsp__MailingPostalCode__c
+  - npsp__MailingState__c
+  - npsp__MailingStreet2__c
+  - npsp__MailingStreet__c
+  - npsp__NCOA_Evaluation_Date__c
+  - npsp__NCOA_Result_Code__c
+  - npsp__Pre_Verification_Address__c
+  - npsp__Seasonal_End_Day__c
+  - npsp__Seasonal_End_Month__c
+  - npsp__Seasonal_Start_Day__c
+  - npsp__Seasonal_Start_Month__c
+  - npsp__State_Lower_District__c
+  - npsp__State_Upper_District__c
+  - npsp__Undeliverable__c
+  - npsp__Verification_Status__c
+  - npsp__Verified_Date__c
+  - npsp__Verified__c
+  lookups:
+    npsp__Household_Account__c:
+      table: Account
+      key_field: npsp__Household_Account__c
+Insert Contract:
+  sf_object: Contract
+  table: Contract
+  lookups:
+    AccountId:
+      table: Account
+      key_field: AccountId
+Insert Contact:
+  sf_object: Contact
+  table: Contact
+  fields:
+  - AssistantName
+  - AssistantPhone
+  - Birthdate
+  - CleanStatus
+  - CurrencyIsoCode
+  - Department
+  - Description
+  - DoNotCall
+  - Email
+  - EmailBouncedDate
+  - EmailBouncedReason
+  - Fax
+  - FirstName
+  - HasOptedOutOfEmail
+  - HasOptedOutOfFax
+  - HomePhone
+  - Jigsaw
+  - Languages__c
+  - LastName
+  - LeadSource
+  - Level__c
+  - MailingCity
+  - MailingCountry
+  - MailingGeocodeAccuracy
+  - MailingLatitude
+  - MailingLongitude
+  - MailingPostalCode
+  - MailingState
+  - MailingStreet
+  - MobilePhone
+  - OtherCity
+  - OtherCountry
+  - OtherGeocodeAccuracy
+  - OtherLatitude
+  - OtherLongitude
+  - OtherPhone
+  - OtherPostalCode
+  - OtherState
+  - OtherStreet
+  - Phone
+  - Salutation
+  - Title
+  - npe01__AlternateEmail__c
+  - npe01__HomeEmail__c
+  - npe01__PreferredPhone__c
+  - npe01__Preferred_Email__c
+  - npe01__Primary_Address_Type__c
+  - npe01__Private__c
+  - npe01__Secondary_Address_Type__c
+  - npe01__SystemAccountProcessor__c
+  - npe01__WorkEmail__c
+  - npe01__WorkPhone__c
+  - npo02__AverageAmount__c
+  - npo02__Best_Gift_Year_Total__c
+  - npo02__Best_Gift_Year__c
+  - npo02__FirstCloseDate__c
+  - npo02__Household_Naming_Order__c
+  - npo02__LargestAmount__c
+  - npo02__LastCloseDate__c
+  - npo02__LastMembershipAmount__c
+  - npo02__LastMembershipDate__c
+  - npo02__LastMembershipLevel__c
+  - npo02__LastMembershipOrigin__c
+  - npo02__LastOppAmount__c
+  - npo02__MembershipEndDate__c
+  - npo02__MembershipJoinDate__c
+  - npo02__Naming_Exclusions__c
+  - npo02__NumberOfClosedOpps__c
+  - npo02__NumberOfMembershipOpps__c
+  - npo02__OppAmount2YearsAgo__c
+  - npo02__OppAmountLastNDays__c
+  - npo02__OppAmountLastYear__c
+  - npo02__OppAmountThisYear__c
+  - npo02__OppsClosed2YearsAgo__c
+  - npo02__OppsClosedLastNDays__c
+  - npo02__OppsClosedLastYear__c
+  - npo02__OppsClosedThisYear__c
+  - npo02__SmallestAmount__c
+  - npo02__Soft_Credit_Last_Year__c
+  - npo02__Soft_Credit_This_Year__c
+  - npo02__Soft_Credit_Total__c
+  - npo02__Soft_Credit_Two_Years_Ago__c
+  - npo02__SystemHouseholdProcessor__c
+  - npo02__TotalMembershipOppAmount__c
+  - npo02__TotalOppAmount__c
+  - npsp__CustomizableRollups_UseSkewMode__c
+  - npsp__Deceased__c
+  - npsp__Do_Not_Contact__c
+  - npsp__Exclude_from_Household_Formal_Greeting__c
+  - npsp__Exclude_from_Household_Informal_Greeting__c
+  - npsp__Exclude_from_Household_Name__c
+  - npsp__First_Soft_Credit_Amount__c
+  - npsp__First_Soft_Credit_Date__c
+  - npsp__Largest_Soft_Credit_Amount__c
+  - npsp__Largest_Soft_Credit_Date__c
+  - npsp__Last_Soft_Credit_Amount__c
+  - npsp__Last_Soft_Credit_Date__c
+  - npsp__Number_of_Soft_Credits_Last_N_Days__c
+  - npsp__Number_of_Soft_Credits_Last_Year__c
+  - npsp__Number_of_Soft_Credits_This_Year__c
+  - npsp__Number_of_Soft_Credits_Two_Years_Ago__c
+  - npsp__Number_of_Soft_Credits__c
+  - npsp__Soft_Credit_Last_N_Days__c
+  - npsp__Sustainer__c
+  - npsp__Undeliverable_Address__c
+  - npsp__is_Address_Override__c
+  lookups:
+    AccountId:
+      table: Account
+      key_field: AccountId
+    IndividualId:
+      table: Individual
+      key_field: IndividualId
+    ReportsToId:
+      table: Contact
+      key_field: ReportsToId
+      after: Insert Contact
+    npo02__Household__c:
+      table: npo02__Household__c
+      key_field: npo02__Household__c
+    npsp__Batch__c:
+      table: npsp__Batch__c
+      key_field: npsp__Batch__c
+    npsp__Current_Address__c:
+      table: npsp__Address__c
+      key_field: npsp__Current_Address__c
+    npsp__Primary_Affiliation__c:
+      table: Account
+      key_field: npsp__Primary_Affiliation__c
+Insert Case:
+  sf_object: Case
+  table: Case
+  fields:
+  - Comments
+  - CurrencyIsoCode
+  - Description
+  - EngineeringReqNumber__c
+  - IsEscalated
+  - Origin
+  - PotentialLiability__c
+  - Priority
+  - Product__c
+  - Reason
+  - SLAViolation__c
+  - Status
+  - Subject
+  - SuppliedCompany
+  - SuppliedEmail
+  - SuppliedName
+  - SuppliedPhone
+  - Type
+  lookups:
+    AccountId:
+      table: Account
+      key_field: AccountId
+    AssetId:
+      table: Asset
+      key_field: AssetId
+    ContactId:
+      table: Contact
+      key_field: ContactId
+    ParentId:
+      table: Case
+      key_field: ParentId
+      after: Insert Case
+Insert Opportunity:
+  sf_object: Opportunity
+  table: Opportunity
+  fields:
+  - Amount
+  - CloseDate
+  - CurrencyIsoCode
+  - CurrentGenerators__c
+  - DeliveryInstallationStatus__c
+  - Description
+  - DiscountType__c
+  - ForecastCategoryName
+  - InvoicedStatus__c
+  - IsPrivate
+  - LeadSource
+  - MainCompetitors__c
+  - Name
+  - NextStep
+  - OrderNumber__c
+  - Probability
+  - StageName
+  - TotalOpportunityQuantity
+  - TrackingNumber__c
+  - Type
+  - npe01__Contact_Id_for_Role__c
+  - npe01__Do_Not_Automatically_Create_Payment__c
+  - npe01__Member_Level__c
+  - npe01__Membership_End_Date__c
+  - npe01__Membership_Origin__c
+  - npe01__Membership_Start_Date__c
+  - npo02__systemHouseholdContactRoleProcessor__c
+  - npsp__Acknowledgment_Date__c
+  - npsp__Acknowledgment_Status__c
+  - npsp__Ask_Date__c
+  - npsp__Batch_Number__c
+  - npsp__Closed_Lost_Reason__c
+  - npsp__CommitmentId__c
+  - npsp__DisableContactRoleAutomation__c
+  - npsp__Fair_Market_Value__c
+  - npsp__Gift_Strategy__c
+  - npsp__Grant_Contract_Date__c
+  - npsp__Grant_Contract_Number__c
+  - npsp__Grant_Period_End_Date__c
+  - npsp__Grant_Period_Start_Date__c
+  - npsp__Grant_Program_Area_s__c
+  - npsp__Grant_Requirements_Website__c
+  - npsp__Honoree_Information__c
+  - npsp__Honoree_Name__c
+  - npsp__In_Kind_Description__c
+  - npsp__In_Kind_Donor_Declared_Value__c
+  - npsp__In_Kind_Type__c
+  - npsp__Is_Grant_Renewal__c
+  - npsp__Matching_Gift_Employer__c
+  - npsp__Matching_Gift_Status__c
+  - npsp__Notification_Message__c
+  - npsp__Notification_Preference__c
+  - npsp__Notification_Recipient_Email__c
+  - npsp__Notification_Recipient_Information__c
+  - npsp__Notification_Recipient_Name__c
+  - npsp__Primary_Contact_Campaign_Member_Status__c
+  - npsp__Qualified_Date__c
+  - npsp__Recurring_Donation_Installment_Number__c
+  - npsp__Requested_Amount__c
+  - npsp__Tribute_Notification_Date__c
+  - npsp__Tribute_Notification_Status__c
+  - npsp__Tribute_Type__c
+  - RecordTypeId
+  lookups:
+    AccountId:
+      table: Account
+      key_field: AccountId
+    CampaignId:
+      table: Campaign
+      key_field: CampaignId
+    ContactId:
+      table: Contact
+      key_field: ContactId
+    ContractId:
+      table: Contract
+      key_field: ContractId
+    Pricebook2Id:
+      table: Pricebook2
+      key_field: Pricebook2Id
+    npe03__Recurring_Donation__c:
+      table: npe03__Recurring_Donation__c
+      key_field: npe03__Recurring_Donation__c
+    npsp__Batch__c:
+      table: npsp__Batch__c
+      key_field: npsp__Batch__c
+    npsp__Honoree_Contact__c:
+      table: Contact
+      key_field: npsp__Honoree_Contact__c
+    npsp__Matching_Gift_Account__c:
+      table: Account
+      key_field: npsp__Matching_Gift_Account__c
+    npsp__Matching_Gift__c:
+      table: Opportunity
+      key_field: npsp__Matching_Gift__c
+      after: Insert Opportunity
+    npsp__Notification_Recipient_Contact__c:
+      table: Contact
+      key_field: npsp__Notification_Recipient_Contact__c
+    npsp__Previous_Grant_Opportunity__c:
+      table: Opportunity
+      key_field: npsp__Previous_Grant_Opportunity__c
+      after: Insert Opportunity
+    npsp__Primary_Contact__c:
+      table: Contact
+      key_field: npsp__Primary_Contact__c
+Insert Order:
+  sf_object: Order
+  table: Order
+  fields:
+  - BillingCity
+  - BillingCountry
+  - BillingGeocodeAccuracy
+  - BillingLatitude
+  - BillingLongitude
+  - BillingPostalCode
+  - BillingState
+  - BillingStreet
+  - CompanyAuthorizedDate
+  - CurrencyIsoCode
+  - CustomerAuthorizedDate
+  - Description
+  - EffectiveDate
+  - EndDate
+  - IsReductionOrder
+  - Name
+  - OrderReferenceNumber
+  - PoDate
+  - PoNumber
+  - ShippingCity
+  - ShippingCountry
+  - ShippingGeocodeAccuracy
+  - ShippingLatitude
+  - ShippingLongitude
+  - ShippingPostalCode
+  - ShippingState
+  - ShippingStreet
+  - Status
+  - Type
+  lookups:
+    AccountId:
+      table: Account
+      key_field: AccountId
+    BillToContactId:
+      table: Contact
+      key_field: BillToContactId
+    ContractId:
+      table: Contract
+      key_field: ContractId
+    CustomerAuthorizedById:
+      table: Contact
+      key_field: CustomerAuthorizedById
+    OriginalOrderId:
+      table: Order
+      key_field: OriginalOrderId
+      after: Insert Order
+    Pricebook2Id:
+      table: Pricebook2
+      key_field: Pricebook2Id
+    ShipToContactId:
+      table: Contact
+      key_field: ShipToContactId
+Insert npe5__Affiliation__c:
+  sf_object: npe5__Affiliation__c
+  table: npe5__Affiliation__c
+  fields:
+  - CurrencyIsoCode
+  - npe5__Description__c
+  - npe5__EndDate__c
+  - npe5__Primary__c
+  - npe5__Role__c
+  - npe5__StartDate__c
+  - npe5__Status__c
+  - npsp__Related_Opportunity_Contact_Role__c
+  lookups:
+    npe5__Contact__c:
+      table: Contact
+      key_field: npe5__Contact__c
+    npe5__Organization__c:
+      table: Account
+      key_field: npe5__Organization__c
+Insert CaseContactRole:
+  sf_object: CaseContactRole
+  table: CaseContactRole
+  fields:
+  - Role
+  lookups:
+    CasesId:
+      table: Case
+      key_field: CasesId
+    ContactId:
+      table: Contact
+      key_field: ContactId
+Insert CaseTeamMember:
+  sf_object: CaseTeamMember
+  table: CaseTeamMember
+  lookups:
+    ParentId:
+      table: Case
+      key_field: ParentId
+    TeamRoleId:
+      table: CaseTeamRole
+      key_field: TeamRoleId
+Insert CaseTeamTemplateRecord:
+  sf_object: CaseTeamTemplateRecord
+  table: CaseTeamTemplateRecord
+  lookups:
+    ParentId:
+      table: Case
+      key_field: ParentId
+    TeamTemplateId:
+      table: CaseTeamTemplate
+      key_field: TeamTemplateId
+Insert EmailMessage:
+  sf_object: EmailMessage
+  table: EmailMessage
+  fields:
+  - BccAddress
+  - CcAddress
+  - FirstOpenedDate
+  - FromAddress
+  - FromName
+  - Headers
+  - HtmlBody
+  - Incoming
+  - IsBounced
+  - IsClientManaged
+  - IsTracked
+  - LastOpenedDate
+  - MessageDate
+  - MessageIdentifier
+  - Status
+  - Subject
+  - TextBody
+  - ThreadIdentifier
+  - ToAddress
+  - ValidatedFromAddress
+  lookups:
+    ActivityId:
+      table: Task
+      key_field: ActivityId
+    EmailTemplateId:
+      table: EmailTemplate
+      key_field: EmailTemplateId
+    ParentId:
+      table: Case
+      key_field: ParentId
+    ReplyToEmailMessageId:
+      table: EmailMessage
+      key_field: ReplyToEmailMessageId
+      after: Insert EmailMessage
+Insert OpportunityContactRole:
+  sf_object: OpportunityContactRole
+  table: OpportunityContactRole
+  fields:
+  - CurrencyIsoCode
+  - IsPrimary
+  - Role
+  lookups:
+    ContactId:
+      table: Contact
+      key_field: ContactId
+    OpportunityId:
+      table: Opportunity
+      key_field: OpportunityId
+Insert OpportunityTeamMember:
+  sf_object: OpportunityTeamMember
+  table: OpportunityTeamMember
+  fields:
+  - CurrencyIsoCode
+  - OpportunityAccessLevel
+  - TeamMemberRole
+  lookups:
+    OpportunityId:
+      table: Opportunity
+      key_field: OpportunityId
+Insert EmailMessageRelation:
+  sf_object: EmailMessageRelation
+  table: EmailMessageRelation
+  fields:
+  - RelationAddress
+  - RelationType
+  lookups:
+    EmailMessageId:
+      table: EmailMessage
+      key_field: EmailMessageId
