@@ -6,6 +6,7 @@ export default class Layout extends LightningElement {
     connectedCallback() {
         //set the title
         document.title = "Layout";
+    
     }
 
 
