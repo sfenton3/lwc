@@ -24,3 +24,5 @@ robot/lwc/results/
 .DS_Store
 .sf/config.json
 .sf
+scripts
+
